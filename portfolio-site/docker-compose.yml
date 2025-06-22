@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: portfolio
+    volumes:
+      - db:/var/lib/mysql
+  php:
+    build: ./backend
+    volumes:
+      - ./backend/src:/var/www/src
+    environment:
+      DB_HOST: db
+      DB_NAME: portfolio
+      DB_USER: root
+      DB_PASS: root
+    depends_on:
+      - db
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - php
+volumes:
+  db:
