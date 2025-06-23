@@ -2,7 +2,7 @@
 
 ![Screenshot of portfolio](docs/screenshot.png)
 
-A lightweight portfolio that **automatically lists every public repository** under **github.com/LeeMarshall1113**.
+A lightweight portfolio that **automatically lists every public repository** under **My portfolio**.
 
 * **Front‑end:** React 18 + Redux Toolkit  
 * **Back‑end:** PHP‑FPM 8.3 + MySQL 8  
