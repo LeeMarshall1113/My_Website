@@ -23,3 +23,4 @@ sudo docker compose up --build -d
 For a free public URL, use DuckDNS + Caddy or Cloudflare Tunnel (see full guide in the repo’s `README.md`).
 
 ---
+Currently working towards getting to production state, code should work just setting up the enviornemtn for the website to go live
